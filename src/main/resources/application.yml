@@ -1,0 +1,18 @@
+eureka:
+  client:
+    region: default
+    registryFetchIntervalSeconds: 5
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+server:
+  port: 8088
+spring:
+  application:
+    name: config
+  cloud:
+    config:
+      server:
+        bootstrap: true
+        git:
+          default-label: main
+          uri: file:///${user.home}/application-config
