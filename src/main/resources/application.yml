@@ -13,6 +13,9 @@ spring:
     config:
       server:
         bootstrap: true
+        
+        ### DA DOVE PRENDE LA CONFIGURAZIONE IL CONFIG SERVER? ###
+        
         git:
           default-label: main
           uri: file:///${user.home}/application-config
